@@ -5,12 +5,12 @@ set(PROJECT_VERSION 1.0)
 project(Builder)
 
 # Check if CMAKE_INSTALL_PREFIX is set
-if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-    message(FATAL_ERROR "CMAKE_INSTALL_PREFIX is not set, please specify a directory using -DCMAKE_INSTALL_PREFIX=<dir>")
-endif()
+#if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+#    message(FATAL_ERROR "CMAKE_INSTALL_PREFIX is not set, please specify a directory using -DCMAKE_INSTALL_PREFIX=<dir>")
+#endif()
 
 # Set the install prefix
-set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME})
+set(CMAKE_INSTALL_PREFIX ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME})
 
 #--------------------------- Set Binary Output Directories --------------------------
 # Set the output directory for the build executables
