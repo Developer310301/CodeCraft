@@ -7,6 +7,7 @@ setuptools.setup(
     },
     author='Federico Barbato',
     description='CodeCraft: A robust C++ project management tool designed for building of C++ projects',
+    long_description_content_type = 'text/markdown',
     long_description="Features include automated file structure generation, seamless integration with CMake, and easy management of external libraries.",
     install_requires=[
         'beautifulsoup4==4.12.2',
