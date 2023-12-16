@@ -1,4 +1,10 @@
 import setuptools
+
+# read the contents of your README file
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
 setuptools.setup(
     name='codecraft',
     version='1.0',
@@ -8,7 +14,7 @@ setuptools.setup(
     author='Federico Barbato',
     description='CodeCraft: A robust C++ project management tool designed for building of C++ projects',
     long_description_content_type = 'text/markdown',
-    long_description="Features include automated file structure generation, seamless integration with CMake, and easy management of external libraries.",
+    long_description=long_description,
     install_requires=[
         'beautifulsoup4==4.12.2',
         'click==8.1.7',
